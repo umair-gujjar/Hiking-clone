@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC3FEDAF1CF86A2C007E6DD3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3FEDAE1CF86A2C007E6DD3 /* main.m */; };
+		BC3FEDB21CF86A2C007E6DD3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3FEDB11CF86A2C007E6DD3 /* AppDelegate.m */; };
+		BC3FEDB51CF86A2C007E6DD3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3FEDB41CF86A2C007E6DD3 /* ViewController.m */; };
+		BC3FEDB81CF86A2C007E6DD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC3FEDB61CF86A2C007E6DD3 /* Main.storyboard */; };
+		BC3FEDBA1CF86A2C007E6DD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC3FEDB91CF86A2C007E6DD3 /* Assets.xcassets */; };
+		BC3FEDBD1CF86A2C007E6DD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC3FEDBB1CF86A2C007E6DD3 /* LaunchScreen.storyboard */; };
+		BC3FEDC81CF86A2C007E6DD3 /* Hiking_CloneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3FEDC71CF86A2C007E6DD3 /* Hiking_CloneTests.m */; };
+		BC3FEDD31CF86A2C007E6DD3 /* Hiking_CloneUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3FEDD21CF86A2C007E6DD3 /* Hiking_CloneUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC3FEDC41CF86A2C007E6DD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC3FEDA21CF86A2B007E6DD3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC3FEDA91CF86A2C007E6DD3;
+			remoteInfo = "Hiking-Clone";
+		};
+		BC3FEDCF1CF86A2C007E6DD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC3FEDA21CF86A2B007E6DD3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC3FEDA91CF86A2C007E6DD3;
+			remoteInfo = "Hiking-Clone";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BC3FEDAA1CF86A2C007E6DD3 /* Hiking-Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hiking-Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC3FEDAE1CF86A2C007E6DD3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BC3FEDB01CF86A2C007E6DD3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BC3FEDB11CF86A2C007E6DD3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BC3FEDB31CF86A2C007E6DD3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BC3FEDB41CF86A2C007E6DD3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BC3FEDB71CF86A2C007E6DD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BC3FEDB91CF86A2C007E6DD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC3FEDBC1CF86A2C007E6DD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BC3FEDBE1CF86A2C007E6DD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC3FEDC31CF86A2C007E6DD3 /* Hiking-CloneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hiking-CloneTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC3FEDC71CF86A2C007E6DD3 /* Hiking_CloneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hiking_CloneTests.m; sourceTree = "<group>"; };
+		BC3FEDC91CF86A2C007E6DD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC3FEDCE1CF86A2C007E6DD3 /* Hiking-CloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hiking-CloneUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC3FEDD21CF86A2C007E6DD3 /* Hiking_CloneUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hiking_CloneUITests.m; sourceTree = "<group>"; };
+		BC3FEDD41CF86A2C007E6DD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC3FEDA71CF86A2C007E6DD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC3FEDC01CF86A2C007E6DD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC3FEDCB1CF86A2C007E6DD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BC3FEDA11CF86A2B007E6DD3 = {
+			isa = PBXGroup;
+			children = (
+				BC3FEDAC1CF86A2C007E6DD3 /* Hiking-Clone */,
+				BC3FEDC61CF86A2C007E6DD3 /* Hiking-CloneTests */,
+				BC3FEDD11CF86A2C007E6DD3 /* Hiking-CloneUITests */,
+				BC3FEDAB1CF86A2C007E6DD3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BC3FEDAB1CF86A2C007E6DD3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC3FEDAA1CF86A2C007E6DD3 /* Hiking-Clone.app */,
+				BC3FEDC31CF86A2C007E6DD3 /* Hiking-CloneTests.xctest */,
+				BC3FEDCE1CF86A2C007E6DD3 /* Hiking-CloneUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC3FEDAC1CF86A2C007E6DD3 /* Hiking-Clone */ = {
+			isa = PBXGroup;
+			children = (
+				BC3FEDB01CF86A2C007E6DD3 /* AppDelegate.h */,
+				BC3FEDB11CF86A2C007E6DD3 /* AppDelegate.m */,
+				BC3FEDB31CF86A2C007E6DD3 /* ViewController.h */,
+				BC3FEDB41CF86A2C007E6DD3 /* ViewController.m */,
+				BC3FEDB61CF86A2C007E6DD3 /* Main.storyboard */,
+				BC3FEDB91CF86A2C007E6DD3 /* Assets.xcassets */,
+				BC3FEDBB1CF86A2C007E6DD3 /* LaunchScreen.storyboard */,
+				BC3FEDBE1CF86A2C007E6DD3 /* Info.plist */,
+				BC3FEDAD1CF86A2C007E6DD3 /* Supporting Files */,
+			);
+			path = "Hiking-Clone";
+			sourceTree = "<group>";
+		};
+		BC3FEDAD1CF86A2C007E6DD3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BC3FEDAE1CF86A2C007E6DD3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BC3FEDC61CF86A2C007E6DD3 /* Hiking-CloneTests */ = {
+			isa = PBXGroup;
+			children = (
+				BC3FEDC71CF86A2C007E6DD3 /* Hiking_CloneTests.m */,
+				BC3FEDC91CF86A2C007E6DD3 /* Info.plist */,
+			);
+			path = "Hiking-CloneTests";
+			sourceTree = "<group>";
+		};
+		BC3FEDD11CF86A2C007E6DD3 /* Hiking-CloneUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BC3FEDD21CF86A2C007E6DD3 /* Hiking_CloneUITests.m */,
+				BC3FEDD41CF86A2C007E6DD3 /* Info.plist */,
+			);
+			path = "Hiking-CloneUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC3FEDA91CF86A2C007E6DD3 /* Hiking-Clone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC3FEDD71CF86A2C007E6DD3 /* Build configuration list for PBXNativeTarget "Hiking-Clone" */;
+			buildPhases = (
+				BC3FEDA61CF86A2C007E6DD3 /* Sources */,
+				BC3FEDA71CF86A2C007E6DD3 /* Frameworks */,
+				BC3FEDA81CF86A2C007E6DD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hiking-Clone";
+			productName = "Hiking-Clone";
+			productReference = BC3FEDAA1CF86A2C007E6DD3 /* Hiking-Clone.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BC3FEDC21CF86A2C007E6DD3 /* Hiking-CloneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC3FEDDA1CF86A2C007E6DD3 /* Build configuration list for PBXNativeTarget "Hiking-CloneTests" */;
+			buildPhases = (
+				BC3FEDBF1CF86A2C007E6DD3 /* Sources */,
+				BC3FEDC01CF86A2C007E6DD3 /* Frameworks */,
+				BC3FEDC11CF86A2C007E6DD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC3FEDC51CF86A2C007E6DD3 /* PBXTargetDependency */,
+			);
+			name = "Hiking-CloneTests";
+			productName = "Hiking-CloneTests";
+			productReference = BC3FEDC31CF86A2C007E6DD3 /* Hiking-CloneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BC3FEDCD1CF86A2C007E6DD3 /* Hiking-CloneUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC3FEDDD1CF86A2C007E6DD3 /* Build configuration list for PBXNativeTarget "Hiking-CloneUITests" */;
+			buildPhases = (
+				BC3FEDCA1CF86A2C007E6DD3 /* Sources */,
+				BC3FEDCB1CF86A2C007E6DD3 /* Frameworks */,
+				BC3FEDCC1CF86A2C007E6DD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC3FEDD01CF86A2C007E6DD3 /* PBXTargetDependency */,
+			);
+			name = "Hiking-CloneUITests";
+			productName = "Hiking-CloneUITests";
+			productReference = BC3FEDCE1CF86A2C007E6DD3 /* Hiking-CloneUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC3FEDA21CF86A2B007E6DD3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = CJ.W;
+				TargetAttributes = {
+					BC3FEDA91CF86A2C007E6DD3 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					BC3FEDC21CF86A2C007E6DD3 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = BC3FEDA91CF86A2C007E6DD3;
+					};
+					BC3FEDCD1CF86A2C007E6DD3 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = BC3FEDA91CF86A2C007E6DD3;
+					};
+				};
+			};
+			buildConfigurationList = BC3FEDA51CF86A2C007E6DD3 /* Build configuration list for PBXProject "Hiking-Clone" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC3FEDA11CF86A2B007E6DD3;
+			productRefGroup = BC3FEDAB1CF86A2C007E6DD3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC3FEDA91CF86A2C007E6DD3 /* Hiking-Clone */,
+				BC3FEDC21CF86A2C007E6DD3 /* Hiking-CloneTests */,
+				BC3FEDCD1CF86A2C007E6DD3 /* Hiking-CloneUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC3FEDA81CF86A2C007E6DD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC3FEDBD1CF86A2C007E6DD3 /* LaunchScreen.storyboard in Resources */,
+				BC3FEDBA1CF86A2C007E6DD3 /* Assets.xcassets in Resources */,
+				BC3FEDB81CF86A2C007E6DD3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC3FEDC11CF86A2C007E6DD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC3FEDCC1CF86A2C007E6DD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC3FEDA61CF86A2C007E6DD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC3FEDB51CF86A2C007E6DD3 /* ViewController.m in Sources */,
+				BC3FEDB21CF86A2C007E6DD3 /* AppDelegate.m in Sources */,
+				BC3FEDAF1CF86A2C007E6DD3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC3FEDBF1CF86A2C007E6DD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC3FEDC81CF86A2C007E6DD3 /* Hiking_CloneTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC3FEDCA1CF86A2C007E6DD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC3FEDD31CF86A2C007E6DD3 /* Hiking_CloneUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC3FEDC51CF86A2C007E6DD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC3FEDA91CF86A2C007E6DD3 /* Hiking-Clone */;
+			targetProxy = BC3FEDC41CF86A2C007E6DD3 /* PBXContainerItemProxy */;
+		};
+		BC3FEDD01CF86A2C007E6DD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC3FEDA91CF86A2C007E6DD3 /* Hiking-Clone */;
+			targetProxy = BC3FEDCF1CF86A2C007E6DD3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BC3FEDB61CF86A2C007E6DD3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC3FEDB71CF86A2C007E6DD3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BC3FEDBB1CF86A2C007E6DD3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC3FEDBC1CF86A2C007E6DD3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC3FEDD51CF86A2C007E6DD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BC3FEDD61CF86A2C007E6DD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC3FEDD81CF86A2C007E6DD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Hiking-Clone/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CJ-Chris.Hiking-Clone";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BC3FEDD91CF86A2C007E6DD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Hiking-Clone/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CJ-Chris.Hiking-Clone";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BC3FEDDB1CF86A2C007E6DD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Hiking-CloneTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CJ-Chris.Hiking-CloneTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hiking-Clone.app/Hiking-Clone";
+			};
+			name = Debug;
+		};
+		BC3FEDDC1CF86A2C007E6DD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Hiking-CloneTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CJ-Chris.Hiking-CloneTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hiking-Clone.app/Hiking-Clone";
+			};
+			name = Release;
+		};
+		BC3FEDDE1CF86A2C007E6DD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Hiking-CloneUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CJ-Chris.Hiking-CloneUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Hiking-Clone";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		BC3FEDDF1CF86A2C007E6DD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Hiking-CloneUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CJ-Chris.Hiking-CloneUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Hiking-Clone";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC3FEDA51CF86A2C007E6DD3 /* Build configuration list for PBXProject "Hiking-Clone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC3FEDD51CF86A2C007E6DD3 /* Debug */,
+				BC3FEDD61CF86A2C007E6DD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC3FEDD71CF86A2C007E6DD3 /* Build configuration list for PBXNativeTarget "Hiking-Clone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC3FEDD81CF86A2C007E6DD3 /* Debug */,
+				BC3FEDD91CF86A2C007E6DD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BC3FEDDA1CF86A2C007E6DD3 /* Build configuration list for PBXNativeTarget "Hiking-CloneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC3FEDDB1CF86A2C007E6DD3 /* Debug */,
+				BC3FEDDC1CF86A2C007E6DD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BC3FEDDD1CF86A2C007E6DD3 /* Build configuration list for PBXNativeTarget "Hiking-CloneUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC3FEDDE1CF86A2C007E6DD3 /* Debug */,
+				BC3FEDDF1CF86A2C007E6DD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC3FEDA21CF86A2B007E6DD3 /* Project object */;
+}
