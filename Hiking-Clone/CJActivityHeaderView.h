@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CJActivityHeaderView.h
 //  Hiking-Clone
 //
 //  Created by qianfeng on 16/5/27.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UITableViewController
-
+@interface CJActivityHeaderView : UITableViewHeaderFooterView
 
 @end
-

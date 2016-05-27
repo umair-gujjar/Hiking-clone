@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  CJActivityCellModel.m
 //  Hiking-Clone
 //
 //  Created by qianfeng on 16/5/27.
 //  Copyright © 2016年 CJ.W. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "CJActivityCellModel.h"
 
-@interface ViewController : UITableViewController
-
+@implementation CJActivityCellModel
 
 @end
-

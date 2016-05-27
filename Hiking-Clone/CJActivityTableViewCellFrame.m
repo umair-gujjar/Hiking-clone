@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  CJActivityTableViewCellFrame.m
 //  Hiking-Clone
 //
 //  Created by qianfeng on 16/5/27.
 //  Copyright © 2016年 CJ.W. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "CJActivityTableViewCellFrame.h"
 
-@interface ViewController : UITableViewController
-
+@implementation CJActivityTableViewCellFrame
 
 @end
-
