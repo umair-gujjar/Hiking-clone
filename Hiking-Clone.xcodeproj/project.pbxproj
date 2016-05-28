@@ -16,9 +16,7 @@
 		BC3FEDC81CF86A2C007E6DD3 /* Hiking_CloneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3FEDC71CF86A2C007E6DD3 /* Hiking_CloneTests.m */; };
 		BC3FEDD31CF86A2C007E6DD3 /* Hiking_CloneUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3FEDD21CF86A2C007E6DD3 /* Hiking_CloneUITests.m */; };
 		BC3FEDE61CF876C3007E6DD3 /* CJActivityHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3FEDE51CF876C3007E6DD3 /* CJActivityHeaderView.m */; };
-		BC3FEDE81CF876E9007E6DD3 /* CJActivityHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC3FEDE71CF876E9007E6DD3 /* CJActivityHeaderView.xib */; };
 		BC3FEDF11CF8796C007E6DD3 /* CJActivityTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3FEDEF1CF8796C007E6DD3 /* CJActivityTableViewCell.m */; };
-		BC3FEDF51CF8799F007E6DD3 /* CJActivityTableViewCellFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3FEDF41CF8799F007E6DD3 /* CJActivityTableViewCellFrame.m */; };
 		BC3FEDF81CF879B4007E6DD3 /* CJActivityCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3FEDF71CF879B4007E6DD3 /* CJActivityCellModel.m */; };
 		BC3FEE981CF87AEE007E6DD3 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3FEDFD1CF87AEE007E6DD3 /* AFHTTPRequestOperation.m */; };
 		BC3FEE991CF87AEE007E6DD3 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3FEDFF1CF87AEE007E6DD3 /* AFHTTPRequestOperationManager.m */; };
@@ -88,6 +86,13 @@
 		BC3FEED91CF87AEE007E6DD3 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3FEE931CF87AEE007E6DD3 /* UIImageView+WebCache.m */; };
 		BC3FEEDA1CF87AEE007E6DD3 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3FEE951CF87AEE007E6DD3 /* UIView+WebCacheOperation.m */; };
 		BC3FEEDB1CF87AEE007E6DD3 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3FEE971CF87AEE007E6DD3 /* MBProgressHUD.m */; };
+		BC3FEEDD1CF87BBC007E6DD3 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC3FEEDC1CF87BBC007E6DD3 /* View.xib */; };
+		BCF814021CF94B7700EB1687 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF814011CF94B7700EB1687 /* libsqlite3.0.tbd */; };
+		BCF814051CF9839500EB1687 /* CJActivityLongViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF814041CF9839500EB1687 /* CJActivityLongViewCell.m */; };
+		BCF814091CF9948D00EB1687 /* SubActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF814081CF9948D00EB1687 /* SubActivityViewController.m */; };
+		BCF8140C1CF9A0A800EB1687 /* TravelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF8140B1CF9A0A800EB1687 /* TravelViewController.m */; };
+		BCF8140F1CF9CC8D00EB1687 /* CJTravelTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF8140E1CF9CC8D00EB1687 /* CJTravelTableCell.m */; };
+		BCF814121CF9CD4200EB1687 /* CJTravelModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF814111CF9CD4200EB1687 /* CJTravelModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,11 +131,8 @@
 		BC3FEDD41CF86A2C007E6DD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC3FEDE41CF876C3007E6DD3 /* CJActivityHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJActivityHeaderView.h; sourceTree = "<group>"; };
 		BC3FEDE51CF876C3007E6DD3 /* CJActivityHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJActivityHeaderView.m; sourceTree = "<group>"; };
-		BC3FEDE71CF876E9007E6DD3 /* CJActivityHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CJActivityHeaderView.xib; sourceTree = "<group>"; };
 		BC3FEDEE1CF8796C007E6DD3 /* CJActivityTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJActivityTableViewCell.h; sourceTree = "<group>"; };
 		BC3FEDEF1CF8796C007E6DD3 /* CJActivityTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJActivityTableViewCell.m; sourceTree = "<group>"; };
-		BC3FEDF31CF8799F007E6DD3 /* CJActivityTableViewCellFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJActivityTableViewCellFrame.h; sourceTree = "<group>"; };
-		BC3FEDF41CF8799F007E6DD3 /* CJActivityTableViewCellFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJActivityTableViewCellFrame.m; sourceTree = "<group>"; };
 		BC3FEDF61CF879B4007E6DD3 /* CJActivityCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJActivityCellModel.h; sourceTree = "<group>"; };
 		BC3FEDF71CF879B4007E6DD3 /* CJActivityCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJActivityCellModel.m; sourceTree = "<group>"; };
 		BC3FEDFC1CF87AEE007E6DD3 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
@@ -274,6 +276,19 @@
 		BC3FEE951CF87AEE007E6DD3 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
 		BC3FEE961CF87AEE007E6DD3 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		BC3FEE971CF87AEE007E6DD3 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		BC3FEEDC1CF87BBC007E6DD3 /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
+		BCF814001CF926BD00EB1687 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		BCF814011CF94B7700EB1687 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		BCF814031CF9839500EB1687 /* CJActivityLongViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJActivityLongViewCell.h; sourceTree = "<group>"; };
+		BCF814041CF9839500EB1687 /* CJActivityLongViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJActivityLongViewCell.m; sourceTree = "<group>"; };
+		BCF814071CF9948D00EB1687 /* SubActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubActivityViewController.h; sourceTree = "<group>"; };
+		BCF814081CF9948D00EB1687 /* SubActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubActivityViewController.m; sourceTree = "<group>"; };
+		BCF8140A1CF9A0A800EB1687 /* TravelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TravelViewController.h; sourceTree = "<group>"; };
+		BCF8140B1CF9A0A800EB1687 /* TravelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TravelViewController.m; sourceTree = "<group>"; };
+		BCF8140D1CF9CC8D00EB1687 /* CJTravelTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJTravelTableCell.h; sourceTree = "<group>"; };
+		BCF8140E1CF9CC8D00EB1687 /* CJTravelTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJTravelTableCell.m; sourceTree = "<group>"; };
+		BCF814101CF9CD4200EB1687 /* CJTravelModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJTravelModel.h; sourceTree = "<group>"; };
+		BCF814111CF9CD4200EB1687 /* CJTravelModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJTravelModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -281,6 +296,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCF814021CF94B7700EB1687 /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +320,7 @@
 		BC3FEDA11CF86A2B007E6DD3 = {
 			isa = PBXGroup;
 			children = (
+				BCF814011CF94B7700EB1687 /* libsqlite3.0.tbd */,
 				BC3FEDAC1CF86A2C007E6DD3 /* Hiking-Clone */,
 				BC3FEDC61CF86A2C007E6DD3 /* Hiking-CloneTests */,
 				BC3FEDD11CF86A2C007E6DD3 /* Hiking-CloneUITests */,
@@ -369,6 +386,7 @@
 			children = (
 				BC3FEDB01CF86A2C007E6DD3 /* AppDelegate.h */,
 				BC3FEDB11CF86A2C007E6DD3 /* AppDelegate.m */,
+				BCF814001CF926BD00EB1687 /* Header.h */,
 			);
 			name = Other;
 			sourceTree = "<group>";
@@ -377,10 +395,14 @@
 			isa = PBXGroup;
 			children = (
 				BC3FEDE41CF876C3007E6DD3 /* CJActivityHeaderView.h */,
-				BC3FEDE71CF876E9007E6DD3 /* CJActivityHeaderView.xib */,
 				BC3FEDE51CF876C3007E6DD3 /* CJActivityHeaderView.m */,
 				BC3FEDEE1CF8796C007E6DD3 /* CJActivityTableViewCell.h */,
 				BC3FEDEF1CF8796C007E6DD3 /* CJActivityTableViewCell.m */,
+				BC3FEEDC1CF87BBC007E6DD3 /* View.xib */,
+				BCF814031CF9839500EB1687 /* CJActivityLongViewCell.h */,
+				BCF814041CF9839500EB1687 /* CJActivityLongViewCell.m */,
+				BCF8140D1CF9CC8D00EB1687 /* CJTravelTableCell.h */,
+				BCF8140E1CF9CC8D00EB1687 /* CJTravelTableCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -388,10 +410,10 @@
 		BC3FEDE21CF86A3F007E6DD3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				BC3FEDF31CF8799F007E6DD3 /* CJActivityTableViewCellFrame.h */,
-				BC3FEDF41CF8799F007E6DD3 /* CJActivityTableViewCellFrame.m */,
 				BC3FEDF61CF879B4007E6DD3 /* CJActivityCellModel.h */,
 				BC3FEDF71CF879B4007E6DD3 /* CJActivityCellModel.m */,
+				BCF814101CF9CD4200EB1687 /* CJTravelModel.h */,
+				BCF814111CF9CD4200EB1687 /* CJTravelModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -401,6 +423,10 @@
 			children = (
 				BC3FEDB31CF86A2C007E6DD3 /* ViewController.h */,
 				BC3FEDB41CF86A2C007E6DD3 /* ViewController.m */,
+				BCF814071CF9948D00EB1687 /* SubActivityViewController.h */,
+				BCF814081CF9948D00EB1687 /* SubActivityViewController.m */,
+				BCF8140A1CF9A0A800EB1687 /* TravelViewController.h */,
+				BCF8140B1CF9A0A800EB1687 /* TravelViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -796,7 +822,7 @@
 				BC3FEDBA1CF86A2C007E6DD3 /* Assets.xcassets in Resources */,
 				BC3FEDB81CF86A2C007E6DD3 /* Main.storyboard in Resources */,
 				BC3FEEC61CF87AEE007E6DD3 /* MJRefresh.bundle in Resources */,
-				BC3FEDE81CF876E9007E6DD3 /* CJActivityHeaderView.xib in Resources */,
+				BC3FEEDD1CF87BBC007E6DD3 /* View.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -850,6 +876,8 @@
 				BC3FEECD1CF87AEE007E6DD3 /* SDImageCache.m in Sources */,
 				BC3FEE9E1CF87AEE007E6DD3 /* AFURLRequestSerialization.m in Sources */,
 				BC3FEECB1CF87AEE007E6DD3 /* MKAnnotationView+WebCache.m in Sources */,
+				BCF8140F1CF9CC8D00EB1687 /* CJTravelTableCell.m in Sources */,
+				BCF814091CF9948D00EB1687 /* SubActivityViewController.m in Sources */,
 				BC3FEEA11CF87AEE007E6DD3 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				BC3FEEC81CF87AEE007E6DD3 /* UIScrollView+MJExtension.m in Sources */,
 				BC3FEED41CF87AEE007E6DD3 /* UIButton+WebCache.m in Sources */,
@@ -861,12 +889,13 @@
 				BC3FEE981CF87AEE007E6DD3 /* AFHTTPRequestOperation.m in Sources */,
 				BC3FEEAC1CF87AEE007E6DD3 /* FMDatabaseQueue.m in Sources */,
 				BC3FEEAD1CF87AEE007E6DD3 /* FMResultSet.m in Sources */,
+				BCF814121CF9CD4200EB1687 /* CJTravelModel.m in Sources */,
 				BC3FEEA01CF87AEE007E6DD3 /* AFURLSessionManager.m in Sources */,
 				BC3FEDAF1CF86A2C007E6DD3 /* main.m in Sources */,
 				BC3FEDE61CF876C3007E6DD3 /* CJActivityHeaderView.m in Sources */,
 				BC3FEE9A1CF87AEE007E6DD3 /* AFHTTPSessionManager.m in Sources */,
-				BC3FEDF51CF8799F007E6DD3 /* CJActivityTableViewCellFrame.m in Sources */,
 				BC3FEECA1CF87AEE007E6DD3 /* UIView+MJExtension.m in Sources */,
+				BCF8140C1CF9A0A800EB1687 /* TravelViewController.m in Sources */,
 				BC3FEEC71CF87AEE007E6DD3 /* MJRefreshConst.m in Sources */,
 				BC3FEEB01CF87AEE007E6DD3 /* JSONModelClassProperty.m in Sources */,
 				BC3FEEC01CF87AEE007E6DD3 /* MJRefreshBackGifFooter.m in Sources */,
@@ -892,6 +921,7 @@
 				BC3FEEA51CF87AEE007E6DD3 /* UIImageView+AFNetworking.m in Sources */,
 				BC3FEEC51CF87AEE007E6DD3 /* MJRefreshStateHeader.m in Sources */,
 				BC3FEED31CF87AEE007E6DD3 /* SDWebImagePrefetcher.m in Sources */,
+				BCF814051CF9839500EB1687 /* CJActivityLongViewCell.m in Sources */,
 				BC3FEED71CF87AEE007E6DD3 /* UIImage+WebP.m in Sources */,
 				BC3FEE991CF87AEE007E6DD3 /* AFHTTPRequestOperationManager.m in Sources */,
 				BC3FEEBC1CF87AEE007E6DD3 /* MJRefreshHeader.m in Sources */,
@@ -1118,6 +1148,7 @@
 				BC3FEDD91CF86A2C007E6DD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BC3FEDDA1CF86A2C007E6DD3 /* Build configuration list for PBXNativeTarget "Hiking-CloneTests" */ = {
 			isa = XCConfigurationList;
@@ -1126,6 +1157,7 @@
 				BC3FEDDC1CF86A2C007E6DD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BC3FEDDD1CF86A2C007E6DD3 /* Build configuration list for PBXNativeTarget "Hiking-CloneUITests" */ = {
 			isa = XCConfigurationList;
@@ -1134,6 +1166,7 @@
 				BC3FEDDF1CF86A2C007E6DD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

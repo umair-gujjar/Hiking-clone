@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CJActivityHeaderView : UITableViewHeaderFooterView
+@interface CJActivityHeaderView : UITableViewCell
 
 @end

@@ -3,11 +3,13 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--活动-->
         <scene sceneID="UBh-tC-5K4">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zl1-MD-K7V" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="gLy-Pp-W3Y" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kEy-pv-1Bi"/>
@@ -17,32 +19,409 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Wtr-GP-dCg">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Wtr-GP-dCg">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="oYt-ue-mb6">
-                                        <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Header" rowHeight="190" id="zSk-tB-yuQ" customClass="CJActivityHeaderView">
+                                        <rect key="frame" x="0.0" y="92" width="375" height="190"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oYt-ue-mb6" id="5Pu-VI-qcQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zSk-tB-yuQ" id="ZWL-c6-3Ge">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="190"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TjB-Zq-fsX">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="190"/>
+                                                    <subviews>
+                                                        <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3lZ-jK-XTa">
+                                                            <rect key="frame" x="0.0" y="1" width="93" height="93"/>
+                                                            <animations/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-1"/>
+                                                            <inset key="titleEdgeInsets" minX="-40" minY="46" maxX="0.0" maxY="0.0"/>
+                                                            <inset key="imageEdgeInsets" minX="19" minY="-17" maxX="0.0" maxY="0.0"/>
+                                                            <state key="normal" title="全部" image="activity_grid_item_content_new_1">
+                                                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </state>
+                                                            <state key="highlighted">
+                                                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="headerBtnClick:" destination="gLy-Pp-W3Y" eventType="touchUpInside" id="U9W-KB-Zaz"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9hK-wi-79Z">
+                                                            <rect key="frame" x="94" y="1" width="93" height="93"/>
+                                                            <animations/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-1"/>
+                                                            <inset key="titleEdgeInsets" minX="-40" minY="46" maxX="0.0" maxY="0.0"/>
+                                                            <inset key="imageEdgeInsets" minX="19" minY="-17" maxX="0.0" maxY="0.0"/>
+                                                            <state key="normal" title="周末" image="activity_grid_item_content_new_2">
+                                                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </state>
+                                                            <state key="highlighted">
+                                                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="headerBtnClick:" destination="gLy-Pp-W3Y" eventType="touchUpInside" id="Bcq-WZ-Teg"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" tag="20" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iND-s9-Vso">
+                                                            <rect key="frame" x="188" y="1" width="93" height="93"/>
+                                                            <animations/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-1"/>
+                                                            <inset key="titleEdgeInsets" minX="-40" minY="46" maxX="0.0" maxY="0.0"/>
+                                                            <inset key="imageEdgeInsets" minX="19" minY="-17" maxX="0.0" maxY="0.0"/>
+                                                            <state key="normal" title="长线" image="activity_grid_item_content_new_3">
+                                                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </state>
+                                                            <state key="highlighted">
+                                                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="headerBtnClick:" destination="gLy-Pp-W3Y" eventType="touchUpInside" id="1Da-ow-O5A"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" tag="30" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hDg-gi-gtD">
+                                                            <rect key="frame" x="282" y="1" width="93" height="93"/>
+                                                            <animations/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-1"/>
+                                                            <inset key="titleEdgeInsets" minX="-40" minY="46" maxX="0.0" maxY="0.0"/>
+                                                            <inset key="imageEdgeInsets" minX="19" minY="-17" maxX="0.0" maxY="0.0"/>
+                                                            <state key="normal" title="摄影" image="activity_grid_item_content_new_4">
+                                                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </state>
+                                                            <state key="highlighted">
+                                                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="headerBtnClick:" destination="gLy-Pp-W3Y" eventType="touchUpInside" id="JpU-GI-kJo"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" tag="40" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oye-GQ-pLd">
+                                                            <rect key="frame" x="0.0" y="95" width="93" height="94"/>
+                                                            <animations/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-1"/>
+                                                            <inset key="titleEdgeInsets" minX="-40" minY="46" maxX="0.0" maxY="0.0"/>
+                                                            <inset key="imageEdgeInsets" minX="19" minY="-17" maxX="0.0" maxY="0.0"/>
+                                                            <state key="normal" title="入门" image="activity_grid_item_content_new_6">
+                                                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </state>
+                                                            <state key="highlighted">
+                                                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="headerBtnClick:" destination="gLy-Pp-W3Y" eventType="touchUpInside" id="1gI-Oa-Cev"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" tag="50" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dFm-9C-gN3">
+                                                            <rect key="frame" x="94" y="95" width="93" height="94"/>
+                                                            <animations/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-1"/>
+                                                            <inset key="titleEdgeInsets" minX="-40" minY="46" maxX="0.0" maxY="0.0"/>
+                                                            <inset key="imageEdgeInsets" minX="19" minY="-17" maxX="0.0" maxY="0.0"/>
+                                                            <state key="normal" title="进阶" image="activity_grid_item_content_new_8">
+                                                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </state>
+                                                            <state key="highlighted">
+                                                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="headerBtnClick:" destination="gLy-Pp-W3Y" eventType="touchUpInside" id="Y8L-xz-zCB"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" tag="60" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TRN-Op-1jT">
+                                                            <rect key="frame" x="188" y="95" width="93" height="94"/>
+                                                            <animations/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-1"/>
+                                                            <inset key="titleEdgeInsets" minX="-40" minY="46" maxX="0.0" maxY="0.0"/>
+                                                            <inset key="imageEdgeInsets" minX="19" minY="-17" maxX="0.0" maxY="0.0"/>
+                                                            <state key="normal" title="露营" image="activity_grid_item_content_new_9">
+                                                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </state>
+                                                            <state key="highlighted">
+                                                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="headerBtnClick:" destination="gLy-Pp-W3Y" eventType="touchUpInside" id="jtg-RM-CMc"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" tag="70" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oOS-re-NAI">
+                                                            <rect key="frame" x="282" y="95" width="93" height="94"/>
+                                                            <animations/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-1"/>
+                                                            <inset key="titleEdgeInsets" minX="-40" minY="46" maxX="0.0" maxY="0.0"/>
+                                                            <inset key="imageEdgeInsets" minX="19" minY="-17" maxX="0.0" maxY="0.0"/>
+                                                            <state key="normal" title="亲子" image="activity_grid_item_content_new_10">
+                                                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </state>
+                                                            <state key="highlighted">
+                                                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="headerBtnClick:" destination="gLy-Pp-W3Y" eventType="touchUpInside" id="YSh-Xn-mk8"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <animations/>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                            </subviews>
                                             <animations/>
                                         </tableViewCellContentView>
                                         <animations/>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="227" id="oYt-ue-mb6" customClass="CJActivityTableViewCell">
+                                        <rect key="frame" x="0.0" y="282" width="375" height="227"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oYt-ue-mb6" id="5Pu-VI-qcQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="227"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SoG-iS-5Aa">
+                                                    <rect key="frame" x="10" y="10" width="355" height="209"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="335" translatesAutoresizingMaskIntoConstraints="NO" id="YYe-LB-UAB">
+                                                            <rect key="frame" x="17" y="8" width="328" height="46"/>
+                                                            <animations/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RCj-Xx-Sgq" userLabel="View-休闲">
+                                                            <rect key="frame" x="10" y="62" width="335" height="20"/>
+                                                            <animations/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </view>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="浦东" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TYt-dp-rAb">
+                                                            <rect key="frame" x="11" y="84" width="204" height="21"/>
+                                                            <animations/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <color key="textColor" red="0.81568627449999997" green="0.81568627449999997" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2016-07-24" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1dw-Vt-DjZ">
+                                                            <rect key="frame" x="11" y="106" width="184" height="21"/>
+                                                            <animations/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <color key="textColor" red="0.81568627449999997" green="0.81568627449999997" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="费用:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvV-rd-yzu">
+                                                            <rect key="frame" x="10" y="128" width="41" height="21"/>
+                                                            <animations/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i5o-bW-6Vm">
+                                                            <rect key="frame" x="11" y="157" width="40" height="40"/>
+                                                            <animations/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="户外" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6t-di-QLG">
+                                                            <rect key="frame" x="59" y="166" width="116" height="21"/>
+                                                            <animations/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <color key="textColor" red="0.81568627449999997" green="0.81568627449999997" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cd2-r4-8I9" userLabel="cover">
+                                                            <rect key="frame" x="246" y="96" width="99" height="101"/>
+                                                            <animations/>
+                                                        </imageView>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1cs-e5-W6Z" userLabel="特惠">
+                                                            <rect key="frame" x="300" y="0.0" width="45" height="46"/>
+                                                            <animations/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="¥2280 - ¥2600" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="po1-8v-9Sg">
+                                                            <rect key="frame" x="51" y="128" width="116" height="21"/>
+                                                            <animations/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <animations/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                            </subviews>
+                                            <animations/>
+                                            <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                        <connections>
+                                            <outlet property="cost" destination="po1-8v-9Sg" id="U19-Zq-CsY"/>
+                                            <outlet property="coverImgView" destination="Cd2-r4-8I9" id="ORD-ol-eRn"/>
+                                            <outlet property="destinationL" destination="TYt-dp-rAb" id="Vgm-ba-go0"/>
+                                            <outlet property="favourable_typeImgView" destination="1cs-e5-W6Z" id="hvh-pw-mRq"/>
+                                            <outlet property="logoTitle" destination="g6t-di-QLG" id="qBB-J3-ooK"/>
+                                            <outlet property="logoV" destination="i5o-bW-6Vm" id="jQn-Ld-KuP"/>
+                                            <outlet property="mainView" destination="SoG-iS-5Aa" id="DN8-de-mqa"/>
+                                            <outlet property="start_timeL" destination="1dw-Vt-DjZ" id="VsT-9c-H3n"/>
+                                            <outlet property="tagV" destination="RCj-Xx-Sgq" id="71o-C3-qdW"/>
+                                            <outlet property="titleL" destination="YYe-LB-UAB" id="qQH-QW-buo"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="gLy-Pp-W3Y" id="3qO-Kk-1dN"/>
+                                    <outlet property="delegate" destination="gLy-Pp-W3Y" id="ult-YN-GL8"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="MCg-In-Wwz"/>
+                    <navigationItem key="navigationItem" title="活动" id="MCg-In-Wwz">
+                        <leftBarButtonItems>
+                            <barButtonItem title="全国" width="35" id="T4t-Gs-ScF"/>
+                            <barButtonItem image="icon_downarrow_15x15" id="4Lx-aT-YaY">
+                                <inset key="imageInsets" minX="-26" minY="0.0" maxX="5" maxY="0.0"/>
+                            </barButtonItem>
+                        </leftBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" image="icon_actionbar_search_44x44" id="z3L-9D-bH6"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="Wtr-GP-dCg" id="ad3-07-P6x"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zl1-MD-K7V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-110.5" y="-344.5"/>
+        </scene>
+        <!--Sub Activity View Controller-->
+        <scene sceneID="ogT-nk-0KM">
+            <objects>
+                <viewController storyboardIdentifier="subVC" id="bIE-7n-GBd" customClass="SubActivityViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WRe-Ia-gjD"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qp6-17-c0L"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iC3-HV-0nN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="227" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KzY-Et-EyD">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="subcell" rowHeight="227" id="XjA-fU-z6i" customClass="CJActivityTableViewCell">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="227"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XjA-fU-z6i" id="FYs-x7-iL2">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="227"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K62-zF-HRo">
+                                                    <rect key="frame" x="10" y="10" width="355" height="209"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="335" translatesAutoresizingMaskIntoConstraints="NO" id="7uU-be-h6Z">
+                                                            <rect key="frame" x="17" y="8" width="328" height="46"/>
+                                                            <animations/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KPs-Zf-nF4" userLabel="View-休闲">
+                                                            <rect key="frame" x="10" y="62" width="335" height="20"/>
+                                                            <animations/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </view>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="浦东" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="33F-0g-Q1y">
+                                                            <rect key="frame" x="11" y="84" width="204" height="21"/>
+                                                            <animations/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <color key="textColor" red="0.81568627449999997" green="0.81568627449999997" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2016-07-24" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GW8-jH-754">
+                                                            <rect key="frame" x="11" y="106" width="184" height="21"/>
+                                                            <animations/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <color key="textColor" red="0.81568627449999997" green="0.81568627449999997" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="费用:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0d3-u7-hcn">
+                                                            <rect key="frame" x="10" y="128" width="41" height="21"/>
+                                                            <animations/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jme-2S-out">
+                                                            <rect key="frame" x="11" y="157" width="40" height="40"/>
+                                                            <animations/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="户外" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r0q-tb-qnA">
+                                                            <rect key="frame" x="59" y="166" width="116" height="21"/>
+                                                            <animations/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <color key="textColor" red="0.81568627449999997" green="0.81568627449999997" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IbR-bs-9iA" userLabel="cover">
+                                                            <rect key="frame" x="246" y="96" width="99" height="101"/>
+                                                            <animations/>
+                                                        </imageView>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dds-pK-c3E" userLabel="特惠">
+                                                            <rect key="frame" x="300" y="0.0" width="45" height="46"/>
+                                                            <animations/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="¥2280 - ¥2600" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YJ2-eZ-ayv">
+                                                            <rect key="frame" x="51" y="128" width="116" height="21"/>
+                                                            <animations/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <animations/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                            </subviews>
+                                            <animations/>
+                                            <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                        <connections>
+                                            <outlet property="cost" destination="YJ2-eZ-ayv" id="xSY-0o-RzC"/>
+                                            <outlet property="coverImgView" destination="IbR-bs-9iA" id="Hj7-ku-8gI"/>
+                                            <outlet property="destinationL" destination="33F-0g-Q1y" id="KZh-AA-W86"/>
+                                            <outlet property="favourable_typeImgView" destination="Dds-pK-c3E" id="xqP-h9-MNp"/>
+                                            <outlet property="logoTitle" destination="r0q-tb-qnA" id="LJL-Nf-AJq"/>
+                                            <outlet property="logoV" destination="Jme-2S-out" id="M5E-Av-Vtg"/>
+                                            <outlet property="mainView" destination="K62-zF-HRo" id="mgW-RT-bsD"/>
+                                            <outlet property="start_timeL" destination="GW8-jH-754" id="BMm-h5-nAE"/>
+                                            <outlet property="tagV" destination="KPs-Zf-nF4" id="r9r-1B-4JJ"/>
+                                            <outlet property="titleL" destination="7uU-be-h6Z" id="GnC-CE-0pN"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="bIE-7n-GBd" id="2kK-5H-GPV"/>
+                                    <outlet property="delegate" destination="bIE-7n-GBd" id="IbY-mK-C9h"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="tableView" destination="KzY-Et-EyD" id="sqT-VH-Xde"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="73X-lP-ZgL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="354.5" y="-328.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="lqN-jp-VME">
@@ -64,10 +443,10 @@
             </objects>
             <point key="canvasLocation" x="-26.5" y="1130.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Travel View Controller-->
         <scene sceneID="Tgw-ZV-tEf">
             <objects>
-                <viewController id="yvK-Xl-Stc" sceneMemberID="viewController">
+                <viewController id="yvK-Xl-Stc" customClass="TravelViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fFs-CB-H2c"/>
                         <viewControllerLayoutGuide type="bottom" id="bfZ-92-8ee"/>
@@ -75,10 +454,81 @@
                     <view key="view" contentMode="scaleToFill" id="0fF-qN-Czx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="226" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CxR-DS-Z6w">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="travel" rowHeight="226" id="8JC-iO-seo" customClass="CJTravelTableCell">
+                                        <rect key="frame" x="0.0" y="92" width="375" height="226"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8JC-iO-seo" id="SQD-Yw-en7">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="226"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yO8-DI-z73">
+                                                    <rect key="frame" x="11" y="10" width="353" height="215"/>
+                                                    <animations/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wrI-cM-aEi">
+                                                    <rect key="frame" x="10" y="10" width="355" height="185"/>
+                                                    <animations/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2016/01/24 · 4天39图 · by 五东留下" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q5u-u9-DcP">
+                                                    <rect key="frame" x="18" y="196" width="265" height="21"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="srM-dE-jfm">
+                                                    <rect key="frame" x="314" y="180" width="38" height="37"/>
+                                                    <animations/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="与神对话" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MfA-aT-l7U">
+                                                    <rect key="frame" x="24" y="160" width="200" height="21"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="590 100 8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9BN-Wy-sVN">
+                                                    <rect key="frame" x="261" y="19" width="97" height="21"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.75294117650000003" green="0.74901960779999999" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="bgImgView" destination="wrI-cM-aEi" id="Q0F-rp-Soh"/>
+                                            <outlet property="bottomLabel" destination="Q5u-u9-DcP" id="NRa-05-Y2p"/>
+                                            <outlet property="descriptionLabel" destination="MfA-aT-l7U" id="BPQ-wL-eDy"/>
+                                            <outlet property="otherLabel" destination="9BN-Wy-sVN" id="cuO-1k-Ll3"/>
+                                            <outlet property="userImgView" destination="srM-dE-jfm" id="BPe-LK-yjK"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="yvK-Xl-Stc" id="38W-sT-AQy"/>
+                                    <outlet property="delegate" destination="yvK-Xl-Stc" id="beU-O4-Y15"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="qfU-vy-yc9"/>
+                    <connections>
+                        <outlet property="tableView" destination="CxR-DS-Z6w" id="e9g-6E-znN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GP7-70-295" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -105,16 +555,20 @@
             </objects>
             <point key="canvasLocation" x="-1133.5" y="208.5"/>
         </scene>
-        <!--Item-->
+        <!--活动-->
         <scene sceneID="LGr-Wt-YXT">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ed9-kj-E5S" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="ZKs-MT-apE"/>
+                    <tabBarItem key="tabBarItem" title="活动" image="icon_activity_57x49" selectedImage="icon_activity_pressed_57x49" id="ZKs-MT-apE">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-9"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5Ms-0r-mwE">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
+                        <color key="barTintColor" red="0.29019607843137257" green="0.69803921568627447" blue="0.89411764705882357" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -125,16 +579,20 @@
             </objects>
             <point key="canvasLocation" x="-581.5" y="-350.5"/>
         </scene>
-        <!--Item-->
+        <!--游记-->
         <scene sceneID="Rxk-gt-VeJ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zuf-hr-oCx" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="5t6-L1-NQs"/>
+                    <tabBarItem key="tabBarItem" title="游记" image="icon_travels_57x49" selectedImage="icon_travels_pressed_57x49" id="5t6-L1-NQs">
+                        <inset key="imageInsets" minX="0.0" minY="10" maxX="0.0" maxY="-12"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="lCl-cc-YZd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
+                        <color key="barTintColor" red="0.29019607843137257" green="0.69803921568627447" blue="0.89411764705882357" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -145,16 +603,19 @@
             </objects>
             <point key="canvasLocation" x="-587.5" y="396.5"/>
         </scene>
-        <!--Item-->
+        <!--路线-->
         <scene sceneID="3mw-Yi-cKV">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="m8c-Qy-SaO" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="gAX-iG-sbv"/>
+                    <tabBarItem key="tabBarItem" title="路线" image="icon_route_57x49" selectedImage="icon_route_pressed_57x49" id="gAX-iG-sbv">
+                        <inset key="imageInsets" minX="0.0" minY="9" maxX="0.0" maxY="-9"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="d2J-SE-cFY">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
+                        <color key="barTintColor" red="0.29019607843137257" green="0.69803921568627447" blue="0.89411764705882357" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -166,4 +627,22 @@
             <point key="canvasLocation" x="-891.5" y="1116.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="activity_grid_item_content_new_1" width="44" height="44"/>
+        <image name="activity_grid_item_content_new_10" width="44" height="44"/>
+        <image name="activity_grid_item_content_new_2" width="44" height="44"/>
+        <image name="activity_grid_item_content_new_3" width="44" height="44"/>
+        <image name="activity_grid_item_content_new_4" width="44" height="44"/>
+        <image name="activity_grid_item_content_new_6" width="44" height="44"/>
+        <image name="activity_grid_item_content_new_8" width="44" height="44"/>
+        <image name="activity_grid_item_content_new_9" width="44" height="44"/>
+        <image name="icon_actionbar_search_44x44" width="44" height="44"/>
+        <image name="icon_activity_57x49" width="57" height="49"/>
+        <image name="icon_activity_pressed_57x49" width="57" height="49"/>
+        <image name="icon_downarrow_15x15" width="15" height="15"/>
+        <image name="icon_route_57x49" width="57" height="49"/>
+        <image name="icon_route_pressed_57x49" width="57" height="49"/>
+        <image name="icon_travels_57x49" width="57" height="49"/>
+        <image name="icon_travels_pressed_57x49" width="57" height="49"/>
+    </resources>
 </document>
