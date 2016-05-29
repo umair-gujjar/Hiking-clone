@@ -25,7 +25,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
+
     [self loadData];
 }
 
@@ -73,9 +73,9 @@
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.row == 0) {
-        return 190;
+        return 200;
     }
-    return 205;
+    return 220;
 }
 - (IBAction)headerBtnClick:(UIButton *)sender {
     id subVC = [self.storyboard instantiateViewControllerWithIdentifier:@"subVC"];

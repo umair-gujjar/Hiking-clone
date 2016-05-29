@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC15B2941CFA874300A35782 /* RouteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC15B2931CFA874300A35782 /* RouteViewController.m */; };
+		BC15B2971CFA974D00A35782 /* CJRouteCollectionSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC15B2961CFA974D00A35782 /* CJRouteCollectionSectionModel.m */; };
+		BC15B29A1CFA976200A35782 /* CJRouteCollectionCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC15B2991CFA976200A35782 /* CJRouteCollectionCellModel.m */; };
+		BC15B29D1CFA998000A35782 /* CJRouteCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC15B29C1CFA998000A35782 /* CJRouteCollectionCell.m */; };
+		BC15B2A01CFA9B3C00A35782 /* CJRouteCollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC15B29F1CFA9B3C00A35782 /* CJRouteCollectionHeaderView.m */; };
 		BC3FEDAF1CF86A2C007E6DD3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3FEDAE1CF86A2C007E6DD3 /* main.m */; };
 		BC3FEDB21CF86A2C007E6DD3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3FEDB11CF86A2C007E6DD3 /* AppDelegate.m */; };
 		BC3FEDB51CF86A2C007E6DD3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3FEDB41CF86A2C007E6DD3 /* ViewController.m */; };
@@ -86,7 +91,6 @@
 		BC3FEED91CF87AEE007E6DD3 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3FEE931CF87AEE007E6DD3 /* UIImageView+WebCache.m */; };
 		BC3FEEDA1CF87AEE007E6DD3 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3FEE951CF87AEE007E6DD3 /* UIView+WebCacheOperation.m */; };
 		BC3FEEDB1CF87AEE007E6DD3 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3FEE971CF87AEE007E6DD3 /* MBProgressHUD.m */; };
-		BC3FEEDD1CF87BBC007E6DD3 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC3FEEDC1CF87BBC007E6DD3 /* View.xib */; };
 		BCF814021CF94B7700EB1687 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF814011CF94B7700EB1687 /* libsqlite3.0.tbd */; };
 		BCF814051CF9839500EB1687 /* CJActivityLongViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF814041CF9839500EB1687 /* CJActivityLongViewCell.m */; };
 		BCF814091CF9948D00EB1687 /* SubActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF814081CF9948D00EB1687 /* SubActivityViewController.m */; };
@@ -113,6 +117,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BC15B2921CFA874300A35782 /* RouteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteViewController.h; sourceTree = "<group>"; };
+		BC15B2931CFA874300A35782 /* RouteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouteViewController.m; sourceTree = "<group>"; };
+		BC15B2951CFA974D00A35782 /* CJRouteCollectionSectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJRouteCollectionSectionModel.h; sourceTree = "<group>"; };
+		BC15B2961CFA974D00A35782 /* CJRouteCollectionSectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJRouteCollectionSectionModel.m; sourceTree = "<group>"; };
+		BC15B2981CFA976200A35782 /* CJRouteCollectionCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJRouteCollectionCellModel.h; sourceTree = "<group>"; };
+		BC15B2991CFA976200A35782 /* CJRouteCollectionCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJRouteCollectionCellModel.m; sourceTree = "<group>"; };
+		BC15B29B1CFA998000A35782 /* CJRouteCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJRouteCollectionCell.h; sourceTree = "<group>"; };
+		BC15B29C1CFA998000A35782 /* CJRouteCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJRouteCollectionCell.m; sourceTree = "<group>"; };
+		BC15B29E1CFA9B3C00A35782 /* CJRouteCollectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJRouteCollectionHeaderView.h; sourceTree = "<group>"; };
+		BC15B29F1CFA9B3C00A35782 /* CJRouteCollectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJRouteCollectionHeaderView.m; sourceTree = "<group>"; };
 		BC3FEDAA1CF86A2C007E6DD3 /* Hiking-Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hiking-Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC3FEDAE1CF86A2C007E6DD3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BC3FEDB01CF86A2C007E6DD3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -276,7 +290,6 @@
 		BC3FEE951CF87AEE007E6DD3 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
 		BC3FEE961CF87AEE007E6DD3 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		BC3FEE971CF87AEE007E6DD3 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
-		BC3FEEDC1CF87BBC007E6DD3 /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 		BCF814001CF926BD00EB1687 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		BCF814011CF94B7700EB1687 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		BCF814031CF9839500EB1687 /* CJActivityLongViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJActivityLongViewCell.h; sourceTree = "<group>"; };
@@ -398,11 +411,14 @@
 				BC3FEDE51CF876C3007E6DD3 /* CJActivityHeaderView.m */,
 				BC3FEDEE1CF8796C007E6DD3 /* CJActivityTableViewCell.h */,
 				BC3FEDEF1CF8796C007E6DD3 /* CJActivityTableViewCell.m */,
-				BC3FEEDC1CF87BBC007E6DD3 /* View.xib */,
 				BCF814031CF9839500EB1687 /* CJActivityLongViewCell.h */,
 				BCF814041CF9839500EB1687 /* CJActivityLongViewCell.m */,
 				BCF8140D1CF9CC8D00EB1687 /* CJTravelTableCell.h */,
 				BCF8140E1CF9CC8D00EB1687 /* CJTravelTableCell.m */,
+				BC15B29C1CFA998000A35782 /* CJRouteCollectionCell.m */,
+				BC15B29B1CFA998000A35782 /* CJRouteCollectionCell.h */,
+				BC15B29E1CFA9B3C00A35782 /* CJRouteCollectionHeaderView.h */,
+				BC15B29F1CFA9B3C00A35782 /* CJRouteCollectionHeaderView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -414,6 +430,11 @@
 				BC3FEDF71CF879B4007E6DD3 /* CJActivityCellModel.m */,
 				BCF814101CF9CD4200EB1687 /* CJTravelModel.h */,
 				BCF814111CF9CD4200EB1687 /* CJTravelModel.m */,
+				BCF8140B1CF9A0A800EB1687 /* TravelViewController.m */,
+				BC15B2951CFA974D00A35782 /* CJRouteCollectionSectionModel.h */,
+				BC15B2961CFA974D00A35782 /* CJRouteCollectionSectionModel.m */,
+				BC15B2981CFA976200A35782 /* CJRouteCollectionCellModel.h */,
+				BC15B2991CFA976200A35782 /* CJRouteCollectionCellModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -426,7 +447,8 @@
 				BCF814071CF9948D00EB1687 /* SubActivityViewController.h */,
 				BCF814081CF9948D00EB1687 /* SubActivityViewController.m */,
 				BCF8140A1CF9A0A800EB1687 /* TravelViewController.h */,
-				BCF8140B1CF9A0A800EB1687 /* TravelViewController.m */,
+				BC15B2921CFA874300A35782 /* RouteViewController.h */,
+				BC15B2931CFA874300A35782 /* RouteViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -822,7 +844,6 @@
 				BC3FEDBA1CF86A2C007E6DD3 /* Assets.xcassets in Resources */,
 				BC3FEDB81CF86A2C007E6DD3 /* Main.storyboard in Resources */,
 				BC3FEEC61CF87AEE007E6DD3 /* MJRefresh.bundle in Resources */,
-				BC3FEEDD1CF87BBC007E6DD3 /* View.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -872,6 +893,7 @@
 				BC3FEDB21CF86A2C007E6DD3 /* AppDelegate.m in Sources */,
 				BC3FEED01CF87AEE007E6DD3 /* SDWebImageDownloader.m in Sources */,
 				BC3FEEBE1CF87AEE007E6DD3 /* MJRefreshAutoNormalFooter.m in Sources */,
+				BC15B2A01CFA9B3C00A35782 /* CJRouteCollectionHeaderView.m in Sources */,
 				BC3FEEA21CF87AEE007E6DD3 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				BC3FEECD1CF87AEE007E6DD3 /* SDImageCache.m in Sources */,
 				BC3FEE9E1CF87AEE007E6DD3 /* AFURLRequestSerialization.m in Sources */,
@@ -897,8 +919,11 @@
 				BC3FEECA1CF87AEE007E6DD3 /* UIView+MJExtension.m in Sources */,
 				BCF8140C1CF9A0A800EB1687 /* TravelViewController.m in Sources */,
 				BC3FEEC71CF87AEE007E6DD3 /* MJRefreshConst.m in Sources */,
+				BC15B2971CFA974D00A35782 /* CJRouteCollectionSectionModel.m in Sources */,
+				BC15B2941CFA874300A35782 /* RouteViewController.m in Sources */,
 				BC3FEEB01CF87AEE007E6DD3 /* JSONModelClassProperty.m in Sources */,
 				BC3FEEC01CF87AEE007E6DD3 /* MJRefreshBackGifFooter.m in Sources */,
+				BC15B29A1CFA976200A35782 /* CJRouteCollectionCellModel.m in Sources */,
 				BC3FEEB81CF87AEE007E6DD3 /* MJRefreshAutoFooter.m in Sources */,
 				BC3FEEAF1CF87AEE007E6DD3 /* JSONModelArray.m in Sources */,
 				BC3FEED91CF87AEE007E6DD3 /* UIImageView+WebCache.m in Sources */,
@@ -912,6 +937,7 @@
 				BC3FEEDB1CF87AEE007E6DD3 /* MBProgressHUD.m in Sources */,
 				BC3FEEC41CF87AEE007E6DD3 /* MJRefreshNormalHeader.m in Sources */,
 				BC3FEEBF1CF87AEE007E6DD3 /* MJRefreshAutoStateFooter.m in Sources */,
+				BC15B29D1CFA998000A35782 /* CJRouteCollectionCell.m in Sources */,
 				BC3FEEBD1CF87AEE007E6DD3 /* MJRefreshAutoGifFooter.m in Sources */,
 				BC3FEEB91CF87AEE007E6DD3 /* MJRefreshBackFooter.m in Sources */,
 				BC3FEED21CF87AEE007E6DD3 /* SDWebImageManager.m in Sources */,
