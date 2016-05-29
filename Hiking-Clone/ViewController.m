@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "CJTools.h"
 #import "AFNetworking.h"
 #import "CJActivityHeaderView.h"
 #import "CJActivityTableViewCell.h"
@@ -25,21 +26,32 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-
+    NSData *data = [CJTools toolTogetData:@"activityArrM"];
+    if (data.length) {
+        self.activityArrM = [CJTools toolTogetData:@"activityArrM"];
+        [self.tableView reloadData];
+    }
     [self loadData];
+    self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        [self loadData];
+    }];
 }
 
 -(void)loadData
 {
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     [manager GET:URL_ACTIVITY parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        //清空 数组缓存
+        [self.activityArrM removeAllObjects];
         NSArray *arr = responseObject[@"activities"];
-//        NSError *error;
         for (NSDictionary *dict in arr) {
             CJActivityCellModel *model = [CJActivityCellModel activityCellModeWithDictionary:dict];
             [self.activityArrM addObject:model];
         }
+        //保存缓存
+        [CJTools toolToSaveWithData:self.activityArrM withIdentifier:@"activityArrM"];
         [self.tableView reloadData];
+        [self.tableView.mj_header endRefreshing];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"failure = %@",error);
     }];
@@ -72,7 +84,7 @@
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath.row == 0) {
+    if (!indexPath.row) {
         return 200;
     }
     return 220;
@@ -111,6 +123,7 @@
         default:
             break;
     }
+    [subVC setValue:[NSString stringWithFormat:@"%ld",sender.tag] forKey:@"identifier"];
     [self.navigationController pushViewController:subVC animated:YES];
 }
 

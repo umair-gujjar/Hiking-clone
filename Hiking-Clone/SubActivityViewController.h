@@ -11,5 +11,5 @@
 @interface SubActivityViewController : UIViewController
 
 @property(nonatomic,copy)NSString *URL;
-
+@property(nonatomic,copy)NSString *identifier;
 @end

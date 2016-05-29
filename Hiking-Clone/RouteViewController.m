@@ -7,6 +7,7 @@
 //
 
 #import "RouteViewController.h"
+#import "CJTools.h"
 #import "AFNetworking.h"
 #import "CJRouteCollectionSectionModel.h"
 #import "CJRouteCollectionCell.h"
@@ -39,28 +40,59 @@
     [super viewDidLoad];
     self.collectionURL = @"http://tubu.ibuzhai.com/rest/v2/trail/regions?app_version=2.4.5&device_type=1";
     self.tableURL = @"http://tubu.ibuzhai.com/rest/v1/trail/types?app_version=2.4.5&device_type=1";
-    self.URL = self.collectionURL;
+    
+    
+    if (!self.scrollView.contentOffset.x) {
+        self.URL = self.collectionURL;
+        NSData *data = [CJTools toolTogetData:@"collectionDataArrM"];
+        if (data.length) {
+            self.collectionDataArrM = [CJTools toolTogetData:@"collectionDataArrM"];
+            [self.collectionView reloadData];
+        }
+    }else
+    {
+        self.URL = self.tableURL;
+        NSData *data = [CJTools toolTogetData:@"tableDataArrM"];
+        if (data.length) {
+            self.tableDataArrM = [CJTools toolTogetData:@"tableDataArrM"];
+            [self.tableView reloadData];
+        }
+    }
+    
     [self createUI];
     [self loadData];
-    }
+    self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        [self loadData];
+    }];
+    self.collectionView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        [self loadData];
+    }];
+}
 
 -(void)loadData
 {
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     [manager GET:self.URL parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         if ([self.URL isEqualToString:self.collectionURL]) {
+            [self.collectionDataArrM removeAllObjects];
             for (NSDictionary *dict in responseObject[@"regions"]) {
                 CJRouteCollectionSectionModel *sectionModel = [[CJRouteCollectionSectionModel alloc] initWithDictionary:dict error:nil];
                 [self.collectionDataArrM addObject:sectionModel];
             }
+            [CJTools toolToSaveWithData:self.collectionDataArrM withIdentifier:@"collectionDataArrM"];
             [self.collectionView reloadData];
+            [self.collectionView.mj_header endRefreshing];
         }else if ([self.URL isEqualToString:self.tableURL])
         {
+            [self.tableDataArrM removeAllObjects];
             for (NSDictionary *dict in responseObject[@"types"]) {
                 [self.tableDataArrM addObject:dict[@"url"]];
             }
+            [CJTools toolToSaveWithData:self.tableDataArrM withIdentifier:@"tableDataArrM"];
             [self.tableView reloadData];
+            [self.tableView.mj_header endRefreshing];
         }
+        [self.tableView.mj_header endRefreshing];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         
     }];
@@ -171,7 +203,7 @@
 
 -(void)sliderViewAnimate:(UIButton *)btn
 {
-    [UIView animateWithDuration:0.3f animations:^{
+    [UIView animateWithDuration:0.1f animations:^{
         self.sliderView.frame = CGRectMake(btn.frame.origin.x, 42, 187, 2);
     }];
 }
